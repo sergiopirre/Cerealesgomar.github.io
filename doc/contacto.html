@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Sergio">
+    <meta name="Description" content="Esto es una página web de una empresa">
+    <meta name="Keywords" content="proyecto">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <style>
+    .comen {
+        height: 50px;
+    }
+    </style>
+</head>
+<body>
+        <ul>
+            <li><a href="localizacion.html">Localización</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="servicio.html">Servicios</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li style="float: left;"><img src="../img/logo.png" style="width: 200px" alt="Cereales Gomar S.L"></li>
+        </ul>
+        <legend>Atención al cliente</legend><br>
+            <form action="/action_page.php">
+                <!--Text es para poder meter texto-->
+                <label for="apellidos">Nombre y apellidos</label> <br>
+                <input type="text" id="apellidos" name="apellidos"> <br><br>
+                <!--Text es para la información que metas sea texto-->
+                <label for="dni">DNI</label><br>
+                <input type="text" id="dni" name="dni"> <br><br>
+                <!--Email es para introducir un correo electrónico-->
+                <label for="correo">Email</label><br>
+                <input type="email" id="correo" name="correo"> <br><br>
+                <!--Tel es para poder añadir un teléfono-->
+                <label for="telefono">Teléfono</label><br>
+                <input type="tel" id="telefono" name="telefono"> <br><br>
+                <!--Select es para poder hacer un desplegable-->
+                <label for="genero">Género</label>
+                <select name="genero" id="genero">
+                    <optgroup>
+                        <option value="mujer">Mujer</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="otro">Otro</option>
+                    </optgroup>
+                </select><br><br>
+                <!--Text es para poner texto-->
+                <label for="comentario">Comentario</label><br>
+                <input type="text" id="comentario" name="comentario" value="" class="comen"> <br><br>
+                <!--La etiqueta submit sirve para enviar la información-->
+                <input type="submit" name="Enviar" onclick="alert('Se ha enviado el formulario correctamente')"><br><br>
+                <!--Image es para introducir una imagen-->
+                <input type="image" id="imagen" name="imagen" src="../img/formulario.png" alt="Imágen de logo" width="100"> <br><br>
+            </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+form, legend {
+    text-align: center;
+}
+form {
+    margin-left: 495px;
+    height: 81vh;
+    width: 20vw;
+    background-color: #f9ff58;
+    border: 3px solid rgb(81, 81, 81);
+}
+legend {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: azure;
+}
+body {
+    background-image: url(../img/campo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
