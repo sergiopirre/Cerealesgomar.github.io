@@ -2,12 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Sergio">
-    <meta name="Description" content="Esto es una página web de una empresa">
+    <meta name="Description" content="La página web de Cereales Gomar">
     <meta name="Keywords" content="proyecto">
     <title>Cereales Gomar S.L</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
     h1 {
         font-size: 40px;
@@ -15,38 +18,45 @@
         margin-top: 20px;
     }
     p {
+        font-size: 20px;
         margin-left: 50px;
         margin-top: 20px;
-        margin-right: 150px;
-        float: left;
     }
-    div {
-        display: flex;
-    }
+    
     .imagen {
-        margin-right: 50px;
-        float: right;
-        display: inline;
-        width: 100vw;
-        height: 50vh;
+        display: block;
+        width: 30vw;
+        height: 30vh auto;
+        margin-left: 50px;
     }
     </style>
 </head>
 <body>
-    <ul>
-        <li><a href="doc/localizacion.html">Localización</a></li>
-        <li><a href="doc/contacto.html">Contacto</a></li>
-        <li><a href="doc/servicio.html">Servicios</a></li>
-        <li><a href="index.html">Inicio</a></li>
-        <li style="float: left;"><img src="img/logo.png" style="width: 200px" alt="Cereales Gomar S.L"></li>
-    </ul>
-    <img src="img/cerealesgomar.png" alt="Cultivo de Maíz">
-    <h1>Cereales Gomar S.L</h1>
-        <div>
-            <p>Cereales Gomar S.L., Fundada en el año 1999, es una empresa de carácter familiar, dedicada desde sus orígenes a la comercialización y secado de cereales, aunque hoy en día nos dedicamos también a almacenaje de mercancía, servicio de abonadora, aplicación de fertilizantes, transportes, etc. <br><br>
-            Situada en pleno centro de Extremadura, zona estratégica agrícola para regadío, en la que destacan los cultivos de maíz, tomate, brócolis, arroz... <br><br>
-            Disponemos de más de 20.000m2 de superficie en nuestras instalaciones repartidas en las poblaciones de Medellín y Santa Amalia.</p>
-            <img src="img/cosecha.jpg" alt="Cultivo de Maíz" class="imagen">
-        </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="" class="enlace">
+            <img src="img/logo.png" alt="Logo de Cereales Gomar" class="logo" loading="lazy">
+        </a>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="doc/servicio.html">Servicios</a></li>
+            <li><a href="doc/contacto.html">Contacto</a></li>
+            <li><a href="doc/localizacion.html">Localización</a></li>
+        </ul>
+    </nav>
+    <section></section>
+    <main>
+        <h1>Cereales Gomar S.L</h1>
+        <p>Cereales Gomar S.L., Fundada en el año 1999, es una empresa de carácter familiar, dedicada desde sus orígenes a la comercialización y secado de cereales, aunque hoy en día nos dedicamos también a almacenaje de mercancía, servicio de abonadora, aplicación de fertilizantes, transportes, etc. <br><br>
+        Situada en pleno centro de Extremadura, zona estratégica agrícola para regadío, en la que destacan los cultivos de maíz, tomate, brócolis, arroz... <br><br>
+        Disponemos de más de 20.000m2 de superficie en nuestras instalaciones repartidas en las poblaciones de Medellín y Santa Amalia.</p><br>
+        <img src="img/cosecha.jpg" alt="Cultivo de Maíz" class="imagen" loading="lazy">
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>

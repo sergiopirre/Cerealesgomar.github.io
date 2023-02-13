@@ -2,13 +2,10 @@ form, legend {
     text-align: center;
 }
 form {
-    margin-left: 495px;
-    height: 81vh;
-    width: 20vw;
-    background-color: #f9ff58;
-    border: 3px solid rgb(81, 81, 81);
+    color: white;
 }
 legend {
+    margin-top: 10px;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: azure;

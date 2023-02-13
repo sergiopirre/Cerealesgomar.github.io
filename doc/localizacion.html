@@ -3,21 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Author" content="Sergio">
-    <meta name="Description" content="Esto es una página web de una empresa">
-    <meta name="Keywords" content="proyecto">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Es la información de localización de la empresa">
+    <meta name="Keywords" content="localizacion">
     <title>Localización</title>
     <link rel="stylesheet" href="../css/index.css">
-    <script src="js/main.js"></script>
-    <style>
-    </style>
+    <link rel="stylesheet" href="../css/localizacion.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="" class="enlace">
+            <img src="../img/logo.png" alt="Logo de Cereales Gomar" class="logo">
+        </a>
         <ul>
-            <li><a href="localización.html">Localización</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
             <li><a href="servicio.html">Servicios</a></li>
-            <li><a href="../index.html">Inicio</a></li>
-            <li style="float: left;"><img src="../img/logo.png" style="width: 200px" alt="Cereales Gomar S.L"></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="localizacion.html">Localización</a></li>
         </ul>
-</body>
-</html>
+    </nav>
+    <main>
+        <h1 class="localizacion">Localización</h1>
+        <div class="divdisplay">
+            <h2 class="titsanta">Santa Amalia</h2>
+            <h2 class="titmedellin">Medellín</h2>
+        </div>
+        <div class="divdisplay">
+            <img src="../img/santaamalia.jpg" alt="" class="imgsanta">
+            <img src="../img/medellin.png" alt="" class="imgmedellin">
+        </div>
+        <div>
+            <p class="psanta">AVDA. HERNÁN CORTÉS S/N <br>
+                C.P. 06410 SANTA AMALIA <br>
+                BADAJOZ <br>
+                TLF: 924 820057 FAX :924 820097 <br>
+                MAIL: cerealesgomar@hotmail.com</p>
+            <p class="pmedellin">CTRA. ESTACIÓN Nº 16 <br>
+                C.P. 06411 MEDELLÍN <br>
+                BADAJOZ <br>
+                TLF: 924 147927 FAX:924 820097 <br>
+                MAIL: cerealesgomar@hotmail.com</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1676288741276!6m8!1m7!1spfq-WhwElNik7Q9AHTA0Fg!2m2!1d39.00741605436259!2d-6.005731500037675!3f38.318376618119856!4f4.8970956102011485!5f0.7820865974627469" class="mapsanta"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1676289033884!6m8!1m7!1s1HuvnTObBk2bXLdL7Cczzg!2m2!1d38.95823411123958!2d-5.962304011327004!3f280.4409225129504!4f0.4039954234501124!5f0.7820865974627469" class="mapsmedellin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer></footer>

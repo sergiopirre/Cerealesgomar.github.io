@@ -1,0 +1,51 @@
+.localizacion {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.titmedellin{
+    margin-left: 460px;
+    font-size: 30px;
+    color: #176717;
+}
+.titsanta{
+    margin-left: 200px;
+    font-size: 30px;
+    color: #176717;
+}
+.imgmedellin {
+    width: 40vw;
+    margin-left: 100px;
+}
+.imgsanta {
+    margin-left: 50px;
+    width: 40vw;
+    height: 30vh;
+}
+.divdisplay {
+    display: flex;
+    margin-top: 20px;
+}
+.psanta {
+    margin-left: 50px;
+}
+.pmedellin {
+    margin-left: 360px;
+}
+div {
+    display: flex;
+}
+.mapsmedellin {
+    width: 40vw;
+    height: 50vh;
+    border: 0;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.mapsanta {
+    width: 40vw;
+    height: 50vh;
+    border: 0;
+    margin-top: 20px;
+    margin-left: 50px;
+}

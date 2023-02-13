@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Author" content="Sergio">
-    <meta name="Description" content="Esto es una página web de una empresa">
-    <meta name="Keywords" content="proyecto">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Es la manera de contactar con la empresa">
+    <meta name="Keywords" content="formulario">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/contacto.css">
-    <style>
-    .comen {
-        height: 50px;
-    }
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <a href="" class="enlace">
+            <img src="../img/logo.png" alt="Logo de Cereales Gomar" class="logo">
+        </a>
         <ul>
-            <li><a href="localizacion.html">Localización</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
             <li><a href="servicio.html">Servicios</a></li>
-            <li><a href="../index.html">Inicio</a></li>
-            <li style="float: left;"><img src="../img/logo.png" style="width: 200px" alt="Cereales Gomar S.L"></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="localizacion.html">Localización</a></li>
         </ul>
+    </nav>
+    <main>
         <legend>Atención al cliente</legend><br>
             <form action="/action_page.php">
                 <!--Text es para poder meter texto-->
@@ -53,5 +60,7 @@
                 <!--Image es para introducir una imagen-->
                 <input type="image" id="imagen" name="imagen" src="../img/formulario.png" alt="Imágen de logo" width="100"> <br><br>
             </form>
+    </main>
+    <footer></footer>
 </body>
 </html>
