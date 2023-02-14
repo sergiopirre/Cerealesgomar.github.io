@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+.divindex {
+    display: flex;
+}
 nav{
     background: #c1c1c1;
     height: 80px;
@@ -54,9 +57,6 @@ section{
     background-position: center center;
     height: 100vh;
     height: calc(100vh - 80px);
-}
-footer {
-    background-color: #2a2a2a;
 }
 
 @media (max-width: 952px){
