@@ -8,26 +8,23 @@
     <meta name="Description" content="Es la manera de contactar con la empresa">
     <meta name="Keywords" content="formulario">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-    <nav>
+<body class="bodycontacto">
+    <header>
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
+        <label for="check" class="btnresponsive">
             <i class="fa-solid fa-bars"></i>
         </label>
-        <a href="" class="enlace">
-            <img src="../img/logo.png" alt="Logo de Cereales Gomar" class="logo">
-        </a>
-        <ul>
+        <img src="../img/logo.png" class="logo" alt="Logo de Cereales Gomar">
+        <ul class="menu">
             <li><a href="../index.html"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="servicio.html">Servicios</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="localizacion.html">Localización</a></li>
         </ul>
-    </nav>
+    </header>
     <main>
         <legend>Atención al cliente</legend><br>
             <form action="/action_page.php">
@@ -54,11 +51,11 @@
                 </select><br><br>
                 <!--Text es para poner texto-->
                 <label for="comentario">Comentario</label><br>
-                <input type="text" id="comentario" name="comentario" value="" class="comen"> <br><br>
+                <input type="text" id="comentario" name="comentario" value=""> <br><br>
                 <!--La etiqueta submit sirve para enviar la información-->
                 <input type="submit" name="Enviar" onclick="alert('Se ha enviado el formulario correctamente')"><br><br>
                 <!--Image es para introducir una imagen-->
-                <input type="image" id="imagen" name="imagen" src="../img/formulario.png" alt="Imágen de logo" width="100"> <br><br>
+                <input type="image" id="imagen" name="imagen" src="../img/logo.png" alt="Logo de Cereales Gomar" width="100vw"> <br><br>
             </form>
     </main>
     <footer></footer>
