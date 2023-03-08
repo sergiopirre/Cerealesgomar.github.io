@@ -31,9 +31,10 @@ html {
     color: #fff;
     font-size: 1.8em;
     padding: 7px 18px;
-    border-radius: 3px;
+    border-radius: 0.3em;
     text-transform: uppercase;
     text-decoration: none;
+    line-height: 1.3em;
 }
 header {
     background: #c1c1c1;
@@ -41,11 +42,11 @@ header {
     width: 100%;
 }
 .btnresponsive{
-    font-size: 30px;
+    font-size: 3em;
     color: #fff;
     float: right;
-    line-height: 85px;
-    margin-right: 40px;
+    line-height: 2.8em;
+    margin-right: 1.3em;
     cursor: pointer;
     display: none;
 }
@@ -58,6 +59,7 @@ header {
     margin-top: 1em;
 }
 .pintroduccion {
+    text-align: justify;
     font-size: 1.5em;
     font-size: 2em;
     margin-left: 1em;
@@ -72,17 +74,55 @@ header {
 .imginicio {
     width: 40vw;
 }
+/*Carrusel de Index*/
+.carrousel {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+.carrousel ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite ease-in-out;
+}
+.carrousel li {
+    list-style: none;
+    width: 100%;
+}
+.carrousel img {
+    width: 100%;
+    height: calc(100vh - 8em);
+    margin: 0;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+
+
 /*Css de Contacto*/
-form, legend {
+form, .h1atencion{
     text-align: center;
 }
 form {
+    margin-top: 2em;
     color: white;
 }
-legend {
-    margin-top: 10px;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.h1atencion {
+    margin-top: 1em;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
     color: azure;
 }
 .bodycontacto {
@@ -227,6 +267,9 @@ legend {
     .imginicio {
         width: 80vw;
         text-align: center;
+    }
+    .carrousel img {
+        height: calc(60vh - 8em);
     }
 }
 
