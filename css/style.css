@@ -186,56 +186,44 @@ form {
     width: 20vw;
 }
 /*Css de Localización*/
-.localizacion {
+.h1localizacion {
     text-align: center;
-    margin-top: 10px;
-    font-size: 40px;
+    margin-top: 0.8em;
+    font-size: 5em;
+    margin-bottom: 1.5em;
 }
-.titmedellin{
-    margin-left: 460px;
-    font-size: 30px;
-    color: #176717;
-}
-.titsanta{
-    margin-left: 200px;
-    font-size: 30px;
-    color: #176717;
-}
-.imgmedellin {
-    width: 40vw;
-    margin-left: 100px;
-}
-.imgsanta {
-    margin-left: 50px;
-    width: 40vw;
-    height: 30vh;
-}
-.divtitulos {
+.container {
     display: flex;
-    margin-top: 20px;
+}
+.colsantaamalia {
+    margin-top: 8em;
+    margin: 0 auto;
 }
 .psanta {
-    margin-left: 50px;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+.mapssanta, .mapsmedellin {
+    width: 30vw;
+    height: 30vh;
+    margin-bottom: 10em;
+}
+.colmedellin {
+    margin: 0px auto;
+}
+.titmedellin, .titsanta {
+    font-size: 4em;
+    color: #34ae34;
+    text-align: center;
 }
 .pmedellin {
-    margin-left: 360px;
+    font-size: 1.5em;
+    margin-bottom: 2em;
 }
-.divdireccion{
-    display: flex;
-}
-.mapsmedellin {
-    width: 40vw;
-    height: 50vh;
-    border: 0;
-    margin-top: 20px;
-    margin-left: 90px;
-}
-.mapsanta {
-    width: 40vw;
-    height: 50vh;
-    border: 0;
-    margin-top: 20px;
-    margin-left: 50px;
+.imgmedellin, .imgsanta {
+    margin-top: 2em;
+    width: 30vw;
+    height: 20vh;
 }
 
 /*Css de footer*/
@@ -246,9 +234,11 @@ footer {
 
 /*Css Grid y responsive*/
 @media screen and (max-width: 480px) {
+    /*El tamaño va a ser de 10px*/
     html {
         font-size: 10px;
     }
+    /*Btn responsivo*/
     .btnresponsive{
         display: block;
     }
@@ -279,6 +269,7 @@ footer {
     .menu li {
         display: block;
     }
+    /*Css de Index*/
     .pintroduccion {
         text-align: left;
         margin-bottom: 0.3em;
@@ -322,13 +313,36 @@ footer {
     .col2 p {
         margin-bottom: 3em;
     }
+    /*Css de localización*/
+    .container {
+        display: block;
+        text-align: center;
+    }
+    .colmedellin, .colsantaamalia {
+        margin: 0 auto;
+    }
+    .titsanta, .titmedellin {
+        font-size: 3.5em;
+    }
+    .pmedellin, .psanta {
+        font-size: 1.2em;
+    }
+    .imgsanta, .imgmedellin {
+        width: 60vw;
+        height: 25vh;
+    }
+    .mapsmedellin, .mapssanta {
+        width: 60vw;
+    }
 }
 
 
 @media screen and (min-width: 481px) and (max-width: 860px) {
+    /*El tamaño va a ser de 10px*/
     html {
         font-size: 10px;
     }
+    /*Btn de responsive*/
     .btnresponsive{
         display: block;
     }
@@ -359,12 +373,14 @@ footer {
     .menu li {
         display: block;
     }
+    /*Css de Index*/
     .imgmain {
         margin-left: 1em;
         margin-right: 0.9em;
         height: 37vh auto;
         margin-bottom: 1em;
     }
+    /*Css de Servicios*/
     .row {
         margin-top: 5em;
     }
@@ -390,9 +406,17 @@ footer {
     .col2 p {
         margin-bottom: 3em;
     }
+    /*Css de localización*/
+    .imgsanta, .imgmedellin {
+        height: 15vh;
+    }
+    .titsanta, .titmedellin {
+        font-size: 3.5em;
+    }
 }
 
 @media screen and (min-width: 861px) {
+    /*Css de Index*/
     .carrousel img {
         height: 100vh;
     }
