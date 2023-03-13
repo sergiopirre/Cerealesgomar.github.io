@@ -115,13 +115,14 @@ form, .h1atencion{
     text-align: center;
 }
 form {
+    font-size: 1.5em;
     margin-top: 2em;
     color: white;
     height: 70vh;
 }
 .h1atencion {
-    margin-top: 1em;
-    font-size: 2em;
+    margin-top: 1.5em;
+    font-size: 2.5em;
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
 }
@@ -228,8 +229,72 @@ form {
 
 /*Css de footer*/
 footer {
-    height: 20vh;
+    margin-top: 8em;
     background-color:#2a2a2a;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2em 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logofooter {
+    height: 8em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.containericonos, .containerderechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+.iconredes {
+    height: 5em;
+    width: 5em;
+    border-radius: 5em;
+    border: 1px solid white;
+    background-image: url(../img/facebook.svg);
+    background-position: center; 
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+.iconredes:hover {
+    filter: invert(1);
+}
+.iconredes:nth-of-type(2) {
+    background-image: url(../img/instagram.svg);
+}
+.iconredes:nth-of-type(3) {
+    background-image: url(../img/linkedin.svg);
+}
+.iconredes:nth-of-type(4) {
+    background-image: url(../img/twitter.svg);
+}
+.containerderechos {
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+}
+.derechos {
+    margin: 0.8em 0.8em;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.derechos:hover {
+    opacity: 1;
+}
+.copyright {
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 1em;
 }
 
 /*Css Grid y responsive*/
@@ -329,7 +394,7 @@ footer {
     }
     .imgsanta, .imgmedellin {
         width: 60vw;
-        height: 25vh;
+        height: 20vh;
     }
     .mapsmedellin, .mapssanta {
         width: 60vw;
