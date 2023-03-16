@@ -85,7 +85,7 @@ header {
     display: flex;
     padding: 0;
     width: 400%;
-    animation: carrousel 16s infinite ease-in-out;
+    animation: carrousel 16s infinite; /*La animacion es carrusel y dura 16s. Infinito*/
 }
 .carrousel li {
     list-style: none;
@@ -93,8 +93,6 @@ header {
 }
 .carrousel img {
     width: 100%;
-    height: calc(100vh - 8em);
-    margin: 0;
 }
 @keyframes carrousel {
     0% {margin-left: 0%;}
@@ -137,7 +135,7 @@ form {
 }
 /*Css de Servicios*/
 .h1servicios {
-    font-size: 40px;
+    font-size: 4em;
     text-align: center;
     text-decoration: double;
     margin-top: 20px;
@@ -253,7 +251,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 1em;
 }
 .iconredes {
@@ -263,21 +260,21 @@ footer {
     border: 1px solid white;
     background-image: url(../img/facebook.svg);
     background-position: center; 
-    background-size: 40%;
+    background-size: 45%;
     background-repeat: no-repeat;
     margin: 1em;
 }
 .iconredes:hover {
     filter: invert(1);
 }
-.iconredes:nth-of-type(2) {
+.iconredes:nth-of-type(2) { /*Cambiar de ul*/
     background-image: url(../img/instagram.svg);
 }
 .iconredes:nth-of-type(3) {
     background-image: url(../img/linkedin.svg);
 }
 .iconredes:nth-of-type(4) {
-    background-image: url(../img/twitter.svg);
+    background-image: url(../img/twitter.svg); 
 }
 .containerderechos {
     list-style-type: none;
@@ -317,7 +314,6 @@ footer {
     'main'
     'footer';
 }
-
 
 @media screen and (max-width: 480px) {
     /*El tamaño va a ser de 10px*/
@@ -464,7 +460,7 @@ footer {
         line-height: 30px;
     }
     header ul li a{
-        font-size: 20px;
+        font-size: 2em;
     }
     #check:checked ~ ul{
         left:0;
