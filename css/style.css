@@ -132,6 +132,9 @@ form {
     background-repeat: no-repeat;
     background-position: center center;
 }
+.logomain {
+    width: 15vw;
+}
 /*Css de Servicios*/
 .h1servicios {
     font-size: 40px;
@@ -298,6 +301,24 @@ footer {
 }
 
 /*Css Grid y responsive*/
+.gridheader {
+    grid-area: header;
+}
+.gridmain {
+    grid-area: main
+}
+.gridfooter {
+    grid-area: footer;
+}
+.gridcontainer {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+
 @media screen and (max-width: 480px) {
     /*El tamaño va a ser de 10px*/
     html {
@@ -403,6 +424,22 @@ footer {
 
 
 @media screen and (min-width: 481px) and (max-width: 860px) {
+    .gridheader {
+        grid-area: header;
+    }
+    .gridmain {
+        grid-area: main
+    }
+    .gridfooter {
+        grid-area: footer;
+    }
+    .gridcontainer {
+        display: grid;
+        grid-template-areas: 
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    }
     /*El tamaño va a ser de 10px*/
     html {
         font-size: 10px;
@@ -442,7 +479,7 @@ footer {
     .imgmain {
         margin-left: 1em;
         margin-right: 0.9em;
-        height: 37vh auto;
+        height: 37vh;
         margin-bottom: 1em;
     }
     /*Css de Servicios*/
@@ -481,6 +518,22 @@ footer {
 }
 
 @media screen and (min-width: 861px) {
+    .gridheader {
+        grid-area: header;
+    }
+    .gridmain {
+        grid-area: main
+    }
+    .gridfooter {
+        grid-area: footer;
+    }
+    .gridcontainer {
+        display: grid;
+        grid-template-areas: 
+        'header header header header header header'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+    }
     /*Css de Index*/
     .carrousel img {
         height: 100vh;
