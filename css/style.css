@@ -416,6 +416,10 @@ footer {
     .mapsmedellin, .mapssanta {
         width: 60vw;
     }
+    /*Css de Contacto*/
+    .logomain {
+        width: 35vw;
+    }
 }
 
 
@@ -511,6 +515,10 @@ footer {
     .titsanta, .titmedellin {
         font-size: 3.5em;
     }
+    /*Css de Contacto*/
+    .logomain {
+        width: 20vw;
+    }
 }
 
 @media screen and (min-width: 861px) {
@@ -545,5 +553,9 @@ footer {
         margin-right: 15em;
         height: 35vh;
         margin-bottom: 2em;
+    }
+    /*Css de Contacto*/
+    .logomain {
+        width: 8vw;
     }
 }
