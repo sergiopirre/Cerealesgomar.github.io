@@ -10,6 +10,17 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .containerContact {
+            margin-top: 150px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body class="bodycontacto">
     <div class="gridcontainer">
@@ -27,42 +38,51 @@
             </ul>
         </header>
         <main class="gridmain">
-            <h1 class="h1atencion">Atención al cliente</h1>
-                <form action="/action_page.php">
-                    <!--Text es para poder meter texto-->
-                    <label for="apellidos">Nombre y apellidos</label> <br>
-                    <input type="text" id="apellidos" name="apellidos"> <br><br>
-                    <!--Text es para la información que metas sea texto-->
-                    <label for="dni">DNI</label><br>
-                    <input type="text" id="dni" name="dni"> <br><br>
-                    <!--Email es para introducir un correo electrónico-->
-                    <label for="correo">Email</label><br>
-                    <input type="email" id="correo" name="correo"> <br><br>
-                    <!--Tel es para poder añadir un teléfono-->
-                    <label for="telefono">Teléfono</label><br>
-                    <input type="tel" id="telefono" name="telefono"> <br><br>
-                    <!--Select es para poder hacer un desplegable-->
-                    <label for="genero">Género</label>
-                    <select name="genero" id="genero">
-                        <optgroup label="Género">
-                            <option value="mujer">Mujer</option>
-                            <option value="hombre">Hombre</option>
-                            <option value="otro">Otro</option>
-                        </optgroup>
-                    </select><br><br>
-                    <!--Text es para poner texto-->
-                    <label for="comentario">Comentario</label><br>
-                    <input type="text" id="comentario" name="comentario" value=""> <br><br>
-                    <!--La etiqueta submit sirve para enviar la información-->
-                    <input type="submit" name="Enviar" onclick="alert('Se ha enviado el formulario correctamente')"><br><br>
+            <div class="containerContact">
+                <h1 class="h1atencion">Atención al cliente</h1>
+                <form action="">
+                    <div class="formulario">
+                        <label for="apellidos">Nombre y apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos">
+                    </div>
+                    <div class="formulario">
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni">
+                    </div>
+                    <div class="formulario">
+                        <label for="correo">Email</label>
+                        <input type="email" id="correo" name="correo">
+                    </div>
+                    <div class="formulario">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="formulario">
+                        <label for="genero">Género</label>
+                        <select name="genero" id="genero">
+                            <optgroup label="Género">
+                                <option value="mujer">Mujer</option>
+                                <option value="hombre">Hombre</option>
+                                <option value="otro">Otro</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="formulario">
+                        <label for="comentario">Comentario</label>
+                        <input type="text" id="comentario" name="comentario">
+                    </div>
+                    <div class="formulario">
+                        <input type="submit" value="Enviar" onclick="alert('Se ha enviado el formulario correctamente')">
+                    </div>
                     <!--Image es para introducir una imagen-->
                     <input type="image" id="imagen" name="imagen" src="../img/logo.png" alt="Logo de Cereales Gomar" class="logomain"> <br><br>
                 </form>
+            </div>
         </main>
         <footer class="gridfooter">
             <img src="../img/logoblanco.png" alt="Logo de la empresa" class="logofooter">
             <div class="containericonos">
-                <a href="https://www.facebook.com/profile.php?id=100063920232917" class="iconredes"></a>
+                <a href="#" class="iconredes"></a>
                 <a href="#" class="iconredes"></a>
                 <a href="#" class="iconredes"></a>
                 <a href="#" class="iconredes"></a>

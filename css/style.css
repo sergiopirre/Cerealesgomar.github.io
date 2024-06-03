@@ -109,29 +109,51 @@ header {
 }
 
 /*Css de Contacto*/
-form, .h1atencion{
-    text-align: center;
-}
-form {
-    font-size: 1.5em;
-    margin-top: 2em;
-    color: white;
-    height: 70vh;
-}
 .h1atencion {
-    margin-top: 1.5em;
-    font-size: 2.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    margin: 0 auto;
+    font-size: 2.4em;
+    margin-bottom: 20px;
 }
-.bodycontacto {
-    background-image: url(../img/campo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.formulario {
+    margin-bottom: 15px;
 }
-.logomain {
-    width: 15vw;
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[type="image"] {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 /*Css de Servicios*/
 .h1servicios {
@@ -253,28 +275,35 @@ footer {
     align-items: center;
     margin-bottom: 1em;
 }
+.containericonos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
 .iconredes {
     height: 5em;
     width: 5em;
     border-radius: 5em;
     border: 1px solid white;
-    background-image: url(../img/facebook.svg);
+    background-image: url(../img/facebook.jpg);
     background-position: center; 
     background-size: 45%;
     background-repeat: no-repeat;
     margin: 1em;
+    background-color: #090909;
 }
 .iconredes:hover {
     filter: invert(1);
 }
 .iconredes:nth-of-type(2) { /*Cambiar de ul*/
-    background-image: url(../img/instagram.svg);
+    background-image: url(../img/instagram.jpg);
 }
 .iconredes:nth-of-type(3) {
-    background-image: url(../img/linkedin.svg);
+    background-image: url(../img/twitter.jpg);
 }
 .iconredes:nth-of-type(4) {
-    background-image: url(../img/twitter.svg); 
+    background-image: url(../img/linkedin.jpg); 
 }
 .containerderechos {
     list-style-type: none;
@@ -420,6 +449,7 @@ footer {
     .logomain {
         width: 35vw;
     }
+
 }
 
 
